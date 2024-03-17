@@ -1,5 +1,10 @@
 package edu.icet.service;
 
-public class HotelService {
+import edu.icet.dto.Hotel;
 
+import java.util.List;
+
+public interface HotelService {
+    //Get all Hotel list
+    List<Hotel> getHotelList();
 }
