@@ -1,10 +1,13 @@
 package edu.icet.service;
 
+import edu.icet.dao.HotelEntity;
 import edu.icet.dto.Hotel;
-
-import java.util.List;
 
 public interface HotelService {
     //Get all Hotel list
-    List<Hotel> getHotelList();
+    Iterable<HotelEntity> getHotelList();
+    void addHotel(Hotel hotel);
+
+    HotelEntity updateHotel(HotelEntity hotel,Long hotelId);
+    void deleteHotelById(Long hotelId);
 }

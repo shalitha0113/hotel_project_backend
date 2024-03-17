@@ -3,3 +3,7 @@ Spring:
     url: jdbc:mysql://localhost:3306/hotel_management
     username: root
     password: 1234
+
+  jpa:
+    hibernate:
+      ddl-auto: create
